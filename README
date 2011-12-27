@@ -1,0 +1,7 @@
+Mode Switcher is a webOS application that brings profile support for devices
+running webOS in the form of "modes". These "modes" can control nearly every
+available setting in webOS and they can be triggered (manually or automatically)
+by a number of different methods or "triggers" that in turn change settings on
+your device based on the configuration of the modes you created. Mode Switcher
+is very powerful and feature rich. You can make its use as simple or complex as
+you would need. 
