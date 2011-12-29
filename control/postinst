@@ -1,0 +1,48 @@
+#!/bin/sh
+
+# Handle execution as pmPostInstall.script
+if [ -z "$IPKG_OFFLINE_ROOT" ]; then
+  IPKG_OFFLINE_ROOT=/media/cryptofs/apps
+  mount -o remount,rw /
+fi
+
+SRV_ID=org.e.lnx.wee.modeswitcher.srv
+SRV_DIR=/media/cryptofs/apps/usr/palm/services/${SRV_ID}
+
+SYS_ID=org.e.lnx.wee.modeswitcher.sys
+SYS_DIR=/media/cryptofs/apps/usr/palm/services/${SYS_ID}
+
+luna-send -n 1 palm://${SRV_ID}/control '{"action":"disable"}'
+
+mkdir -p /var/palm/event.d
+
+cp -f ${SRV_DIR}/configuration/event.d/${SRV_ID} /var/palm/event.d/
+
+ls -l /var/palm/event.d/$SRV_ID >>/tmp/log
+
+/usr/bin/killall -9 ${SRV_ID} || true
+
+mkdir -p /var/usr/sbin
+
+install -m 755 ${SYS_DIR}/impersonate /var/usr/sbin/${SYS_ID}
+
+mkdir -p /var/palm/ls2/services/prv >/dev/null 2>&1
+mkdir -p /var/palm/ls2/services/pub >/dev/null 2>&1
+
+cp -f ${SRV_DIR}/${SRV_ID}.json /var/palm/ls2/roles/prv/
+cp -f ${SRV_DIR}/${SRV_ID}.json /var/palm/ls2/roles/pub/
+
+cp -f ${SRV_DIR}/${SRV_ID}.service /var/palm/ls2/services/prv/
+cp -f ${SRV_DIR}/${SRV_ID}.service /var/palm/ls2/services/pub/
+
+cp -f ${SYS_DIR}/${SYS_ID}.json /var/palm/ls2/roles/prv/
+cp -f ${SYS_DIR}/${SYS_ID}.json /var/palm/ls2/roles/pub/
+
+cp -f ${SYS_DIR}/${SYS_ID}.service /var/palm/ls2/services/prv/
+cp -f ${SYS_DIR}/${SYS_ID}.service /var/palm/ls2/services/pub/
+
+ls -l /var/palm/ls2/*/*/*modeswitcher* >>/tmp/log
+
+/usr/bin/pkill switcher.srv.js || true
+
+/usr/bin/ls-control scan-services || true

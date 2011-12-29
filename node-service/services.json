@@ -1,0 +1,40 @@
+{
+	"description": "Mode Switcher Service",
+	"id": "org.e.lnx.wee.modeswitcher.srv",
+	"engine": "node",
+	"activityTimeout": 60,
+	"commandTimeout": 60,
+	"services": [ {
+		"name": "org.e.lnx.wee.modeswitcher.srv",
+		"description": "Background service for Mode Switcher",
+		"assistant": "MainServiceAssistant",
+		"commands": [ 
+			{ 
+				"name": "control", 
+				"assistant": "ControlCommandAssistant",
+				"public": true
+			},
+			{
+				"name": "execute", 
+				"assistant": "ExecuteCommandAssistant",
+				"public": true
+			},
+			{
+				"name": "prefs", 
+				"assistant": "PrefsCommandAssistant",
+				"public": true
+			},
+			{
+				"name": "status", 
+				"assistant": "StatusCommandAssistant",
+				"public": true, 
+				"subscribe": true
+			},
+			{ 
+				"name": "trigger", 
+				"assistant": "TriggerCommandAssistant",
+				"public": true
+			},
+		] 
+	}]
+}

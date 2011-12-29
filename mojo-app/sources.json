@@ -1,0 +1,69 @@
+[
+	{ "source": "app/assistants/app-assistant.js" },
+
+	{
+		"source": "app/assistants/gdm-assistant.js", 
+		"scenes": "gdm"
+	},
+
+	{
+		"source": "app/assistants/main-assistant.js", 
+		"scenes": "main"
+	},
+	{
+		"source": "app/assistants/mode-assistant.js", 
+		"scenes": "mode"
+	},
+
+	{
+		"source": "app/assistants/popup-assistant.js",
+		"scenes": "popup"
+	},
+	{
+		"source": "app/assistants/prefs-assistant.js",
+		"scenes": "prefs"
+	},
+
+	{
+		"source": "app/assistants/startup-assistant.js",
+		"scenes": "startup"
+	},
+	{
+		"source": "app/assistants/support-assistant.js",
+		"scenes": "support"
+	},
+
+	{ "source": "app/extensions/actions/default-extension.js" },
+	{ "source": "app/extensions/actions/browser-extension.js" },
+	{ "source": "app/extensions/actions/govnah-extension.js" },
+	{ "source": "app/extensions/actions/modesw-extension.js" },
+	{ "source": "app/extensions/actions/phoneapp-extension.js" },
+	{ "source": "app/extensions/actions/systools-extension.js" },
+ 
+	{ "source": "app/extensions/settings/airplane-extension.js" },
+	{ "source": "app/extensions/settings/calendar-extension.js" },
+	{ "source": "app/extensions/settings/connection-extension.js" },
+	{ "source": "app/extensions/settings/contacts-extension.js" },
+	{ "source": "app/extensions/settings/email-extension.js" },
+	{ "source": "app/extensions/settings/messaging-extension.js" },
+	{ "source": "app/extensions/settings/network-extension.js" },
+	{ "source": "app/extensions/settings/phone-extension.js" },
+	{ "source": "app/extensions/settings/ringer-extension.js" },
+	{ "source": "app/extensions/settings/screen-extension.js" },
+	{ "source": "app/extensions/settings/security-extension.js" },
+	{ "source": "app/extensions/settings/sound-extension.js" },
+
+	{ "source": "app/extensions/triggers/application-extension.js" },
+	{ "source": "app/extensions/triggers/battery-extension.js" },
+	{ "source": "app/extensions/triggers/bluetooth-extension.js" },
+	{ "source": "app/extensions/triggers/calevent-extension.js" },
+	{ "source": "app/extensions/triggers/charger-extension.js" },
+	{ "source": "app/extensions/triggers/display-extension.js" },
+	{ "source": "app/extensions/triggers/headset-extension.js" },
+	{ "source": "app/extensions/triggers/interval-extension.js" },
+	{ "source": "app/extensions/triggers/location-extension.js" },
+	{ "source": "app/extensions/triggers/modechange-extension.js" },
+	{ "source": "app/extensions/triggers/silentsw-extension.js" },
+	{ "source": "app/extensions/triggers/timeofday-extension.js" },
+	{ "source": "app/extensions/triggers/wireless-extension.js" }
+]

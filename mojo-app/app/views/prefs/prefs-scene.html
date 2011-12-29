@@ -1,0 +1,81 @@
+<div id="prefs" class="prefs">
+	<div class="palm-page-header multi-line">
+		<div class="palm-page-header-wrapper">
+			<div class="help-toggle" id="help-toggle" x-mojo-tap-highlight="persistent"></div>
+			<div class="icon"></div>
+			<div class="title" id="title">Extensions</div>
+		</div>
+	</div>
+
+	<div id="mainView">
+	  	<div class="palm-group">
+			<div class="palm-group-title">Functionality</div>
+
+			<div class="palm-list">
+				<div class='palm-row single'>
+					<div class='palm-row-wrapper'>
+						<div id="AdvancedSettingsButton" x-mojo-element="ToggleButton"></div>
+						<div class="title left">Advanced Features</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="palm-info-text single" x-mojo-loc=''>
+			Advanced system prefs patches need to be installed for advanced features to work!
+		</div>
+
+		<div class="palm-group">
+			<div class="palm-group-title">Preferences</div>
+
+			<div class="palm-list">
+				<div id="SettingsPrefsButton" x-mojo-element="Button"></div>
+
+				<div id="ActionsPrefsButton" x-mojo-element="Button"></div>
+
+				<div id="TriggersPrefsButton" x-mojo-element="Button"></div>
+			</div>
+		</div>
+	
+		<div class="palm-info-text single" x-mojo-loc=''>
+			Extension preferences can be used to taylor behavior of all extensions for your needs.
+		</div>
+	</div>
+	
+	<div id="settingsView" style="display:none;">
+		<div class="palm-list">
+			<div class='palm-row single'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="SettingsForcedHelp" style="margin-left:5px;margin-right:5px;"></div>		
+
+					<div class="palm-group">
+						<div class="palm-group-title truncating-text">Forced Settings Applying</div>
+
+						<div class="palm-list">
+							<div id="SettingsList" x-mojo-element="List"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+
+	<div id="triggersView" style="display:none;">
+		<div class="palm-list">
+			<div class='palm-row single'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="TriggersDelaysHelp" style="margin-left:5px;margin-right:5px;"></div>		
+
+					<div class="palm-group">
+						<div class="palm-group-title truncating-text">Mode Changing Delays</div>
+
+						<div class="palm-list">
+							<div id="TriggersList" x-mojo-element="List"></div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>	
+</div>
+

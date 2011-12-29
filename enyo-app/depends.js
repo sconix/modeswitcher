@@ -1,0 +1,13 @@
+enyo.depends(
+	"lib/CustomKinds.css",
+	"lib/CustomKinds.js",
+	"css/ModeSwitcher.css",
+	"source/Help.js",
+	"source/Info.js",
+	"source/Main.js",
+	"source/Mode.js",
+	"source/Prefs.js",
+	"source/Profile.js",
+	"source/Sharing.js",
+	"source/Situation.js"
+);

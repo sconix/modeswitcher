@@ -1,0 +1,55 @@
+<div class="main">
+	<div class="palm-page-header multi-line">
+		<div class="palm-page-header-wrapper">
+			<div class="icon"></div>
+			<div class="title main">
+				<span id="main-title">Mode Switcher</span>
+				<span class="version" id="version">v0.0.0</span>
+			</div>
+			<div class="title sub" id="subTitle">Take Control of Your Device</div>
+		</div>
+	</div>
+
+	<div class="palm-list">
+		<div class='palm-row single'>
+			<div class='palm-row-wrapper'>
+				<div id="ActivatedButton" x-mojo-element="ToggleButton"></div>
+				<div class="title left" id="StatusText">Activated</div>     
+			</div>
+		</div>
+	</div>
+	
+	<div class="palm-group">
+		<div class="palm-group-title">Popup Dialog</div>
+	
+		<div class="palm-list">
+			<div class='palm-row first'>
+				<div class='palm-row-wrapper'>
+					<div  id="StartSelector" x-mojo-element="ListSelector"></div>
+				</div>
+			</div>
+			<div class='palm-row last'>
+				<div class='palm-row-wrapper'>
+					<div  id="CloseSelector" x-mojo-element="ListSelector"></div>
+		 		</div>
+		 	</div>
+		</div>
+	</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title">Custom Modes</div>
+		
+		<div class="palm-list">
+			<div id="ModesList" x-mojo-element="List"></div>
+		</div>
+	</div>
+
+	<div id="AddModeButton" x-mojo-element="Button"></div>
+	
+	<div id="DefModeButton" x-mojo-element="Button"></div>
+</div>
+
+<div class="palm-scrim" id="overlay-scrim" style="display: none;">
+    <div id="waitSpinner" x-mojo-element="Spinner" />
+</div>
+

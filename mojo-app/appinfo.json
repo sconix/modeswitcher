@@ -1,0 +1,12 @@
+{
+	"id": "org.e.lnx.wee.modeswitcher",
+	"title": "Mode Switcher",
+	"type": "web",
+	"main": "index.html",
+	"icon": "icon.png",
+	"miniicon": "icon_mini.png",
+	"version": "2.5.5",
+	"vendor": "wee.e-lnx.org",
+	"removable": "true",
+	"noWindow": "true"
+}

@@ -1,0 +1,14 @@
+{
+	"role": {
+		"exeName":"js",
+		"type": "privileged",
+		"allowedNames": ["org.e.lnx.wee.modeswitcher.srv"]
+	},
+	"permissions": [
+		{
+			"service":"org.e.lnx.wee.modeswitcher.srv",
+			"inbound":["*"],
+			"outbound":["*"]
+		}
+	]
+}

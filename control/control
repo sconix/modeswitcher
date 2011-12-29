@@ -1,0 +1,9 @@
+Package: org.e.lnx.wee.modeswitcher
+Version: 2.5.5
+Architecture: armv7
+Size: 0
+Description: Mode Switcher
+Maintainer: Janne Julkunen <janne.julkunen@wee.e-lnx.org>
+Section: misc
+Priority: optional
+Source: { "Feed":"Enlightened Linux Applications", "Type":"Application", "Category":"System Utilities", "LastUpdated":"0000000000", "Title":"Mode Switcher", "FullDescription":"", "Homepage":"", "Icon":"", "Screenshots":[], "License":"BSD License", "MinWebOSVersion": "2.1.0", "MaxWebOSVersion": "2.9.9", "PostInstallFlags": "RestartLuna", "PostUpdateFlags": "RestartLuna", "PostRemoveFlags": "RestartLuna" }

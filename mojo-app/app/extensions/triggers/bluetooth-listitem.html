@@ -1,0 +1,37 @@
+<div class="palm-row no-divider">
+	<div class='palm-row-wrapper'>
+
+		<div class="palm-group">
+			<div class="palm-group-title">#{bluetoothTitle}</div>
+
+			<div class="palm-list">	
+				<div class='palm-row first'>
+					<div class='palm-row-wrapper'>
+						<div class="help-overlay" id="BluetoothStateHelp"></div>
+						<div name="BluetoothStateSelector" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+				<div class='palm-row #{bluetoothProfileRow}'>
+					<div class='palm-row-wrapper'>
+						<div class="help-overlay" id="BluetoothProfileHelp"></div>
+						<div name="BluetoothProfileSelector" x-mojo-element="ListSelector"></div>
+					</div>
+				</div>
+				<div class='palm-row last' style="display:#{bluetoothDeviceDisplay};">
+					<div class='palm-row-wrapper'>
+						<div class="help-overlay" id="BluetoothDeviceHelp"></div>
+						<div class='textfield-group' x-mojo-focus-highlight="true">
+							<div class="title">
+								<div name="BluetoothDeviceText" x-mojo-element="TextField"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div style="min-height:6px;"></div>
+
+	</div>
+</div>
+

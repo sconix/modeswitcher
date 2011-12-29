@@ -1,0 +1,42 @@
+[
+	{ "library": { "name": "foundations", "version": "1.0" } },
+	
+	{ "source": "assistants/service-assistant.js" },
+
+	{ "source": "assistants/control-assistant.js" },
+	{ "source": "assistants/execute-assistant.js" },
+	{ "source": "assistants/prefs-assistant.js" },
+	{ "source": "assistants/status-assistant.js" },
+	{ "source": "assistants/trigger-assistant.js" },
+	
+	{ "source": "utilities/applications-manager.js" },
+	{ "source": "utilities/preferences-manager.js" },
+	{ "source": "utilities/utilities-toolbox.js" },
+	
+	{ "source": "extensions/settings/airplane-extension.js" },
+	{ "source": "extensions/settings/calendar-extension.js" },
+	{ "source": "extensions/settings/connection-extension.js" },
+	{ "source": "extensions/settings/contacts-extension.js" },
+	{ "source": "extensions/settings/email-extension.js" },
+	{ "source": "extensions/settings/messaging-extension.js" },
+	{ "source": "extensions/settings/network-extension.js" },
+	{ "source": "extensions/settings/phone-extension.js" },
+	{ "source": "extensions/settings/ringer-extension.js" },
+	{ "source": "extensions/settings/screen-extension.js" },
+	{ "source": "extensions/settings/security-extension.js" },
+	{ "source": "extensions/settings/sound-extension.js" },
+	
+	{ "source": "extensions/triggers/application-extension.js" },
+	{ "source": "extensions/triggers/battery-extension.js" },
+	{ "source": "extensions/triggers/bluetooth-extension.js" },
+	{ "source": "extensions/triggers/calevent-extension.js" },
+	{ "source": "extensions/triggers/charger-extension.js" },
+	{ "source": "extensions/triggers/display-extension.js" },
+	{ "source": "extensions/triggers/headset-extension.js" },
+	{ "source": "extensions/triggers/interval-extension.js" },
+	{ "source": "extensions/triggers/location-extension.js" },
+	{ "source": "extensions/triggers/modechange-extension.js" },
+	{ "source": "extensions/triggers/silentsw-extension.js" },
+	{ "source": "extensions/triggers/timeofday-extension.js" },
+	{ "source": "extensions/triggers/wireless-extension.js" }
+]

@@ -1,0 +1,192 @@
+<div id="import" class="config" style="display:none;">
+	<div class="palm-page-header multi-line">
+		<div class="palm-page-header-wrapper">
+			<div class="help-toggle" id="help-toggle-import" x-mojo-tap-highlight="persistent"></div>
+			<div class="icon"></div>
+			<div class="title" id="ImportTitle1">Import Document</div>
+		</div>
+	</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title">Filter Options</div>
+		
+		<div class="palm-list">
+			<div class='palm-row first'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ImportMatchHelp"></div>
+					<div class='textfield-group' x-mojo-focus-highlight="true">
+						<div class="title">
+							<div id="ImportGDMatch" x-mojo-element="TextField"></div>
+						</div>
+					</div>
+				</div>	
+			</div>
+			<div class='palm-row'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ImportSharedHelp"></div>
+					<div id="ImportGDShared" x-mojo-element="ToggleButton"></div>
+					<div class="title">Only show shared</div>
+				</div>	
+			</div>		
+			<div class='palm-row last'>
+		 		<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ImportOrderingHelp"></div>
+					<div id="ImportGDOrdering" x-mojo-element="ListSelector"></div>
+				</div>
+			</div>
+		</div>	
+	</div>
+	
+	<div class="palm-group" id="privateDocs">
+		<div class="palm-group-title">Google Docs</div>
+		
+		<div class="palm-list">
+			<div class='palm-row first'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ImportUsernameHelp"></div>
+					<div class='textfield-group' x-mojo-focus-highlight="true">
+						<div class="title">
+							<div id="ImportGDUsername" x-mojo-element="TextField"></div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<div class='palm-row last'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ImportPasswordHelp"></div>
+					<div class='textfield-group' x-mojo-focus-highlight="true">
+						<div class="title">
+							<div id="ImportGDPassword" x-mojo-element="PasswordField"></div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>	
+	</div>	
+
+	<div class="palm-group" id="publicDocs" style="display:none;">
+		<div class="palm-group-title">Google Groups</div>
+		
+		<div class="palm-list">
+			<div class='palm-row first'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ImportLimitHelp"></div>				
+					<div id="ImportGDLimit" x-mojo-element="ListSelector"></div>
+				</div>	
+			</div>	
+			<div class='palm-row last'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ImportManualHelp"></div>
+					<div class='textfield-group' x-mojo-focus-highlight="true">
+						<div class="title">
+							<div id="ImportGDManual" x-mojo-element="TextField"></div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>	
+	</div>	
+	
+	<div id="ImportGDButton" x-mojo-element="Button"></div>
+</div>
+
+<div id="import-list" style="display:none;">
+	<div class="palm-page-header multi-line">
+		<div class="palm-page-header-wrapper">
+			<div class="icon"></div>
+			<div class="title"  id="ImportTitle2">Import Document</div>
+		</div>
+	</div>
+	
+	<div class="palm-list">
+		<div id="ImportGDList" x-mojo-element="List"></div>
+	</div>
+</div>
+
+<div id="export" class="config" style="display:none;">
+	<div class="palm-page-header multi-line">
+		<div class="palm-page-header-wrapper">
+			<div class="help-toggle" id="help-toggle-export" x-mojo-tap-highlight="persistent"></div>
+			<div class="icon"></div>
+			<div class="title" id="ExportTitle">Export Document</div>
+		</div>
+	</div>
+	
+	<div class="palm-group">
+		<div class="palm-group-title">Document Info</div>
+		
+		<div class="palm-list">
+			<div class='palm-row first'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ExportTitleHelp"></div>
+					<div class='textfield-group' x-mojo-focus-highlight="true">
+						<div class="title">
+							<div id="ExportGDTitle" x-mojo-element="TextField"></div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<div class='palm-row last'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ExportDescHelp"></div>
+					<div class='textfield-group' x-mojo-focus-highlight="true">
+						<div class="title">
+							<div id="ExportGDDesc" x-mojo-element="TextField"></div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+		</div>
+	</div>
+
+	<div class="palm-group">
+		<div class="palm-group-title">Google Docs</div>
+		
+		<div class="palm-list">
+			<div class='palm-row first'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ExportUsernameHelp"></div>				
+					<div class='textfield-group' x-mojo-focus-highlight="true">
+						<div class="title">
+							<div id="ExportGDUsername" x-mojo-element="TextField"></div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<div class='palm-row'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ExportPasswordHelp"></div>
+					<div class='textfield-group' x-mojo-focus-highlight="true">
+						<div class="title">
+							<div id="ExportGDPassword" x-mojo-element="PasswordField"></div>
+						</div>
+					</div>
+				</div>	
+			</div>	
+			<div class='palm-row last'>
+				<div class='palm-row-wrapper'>
+					<div class="help-overlay" id="ExportShareHelp"></div>				
+					<div id="ExportGDShare" x-mojo-element="ToggleButton"></div>
+					<div class="title left">Share with group</div>
+				</div>	
+			</div>	
+		</div>	
+	</div>	
+
+	<div id="ExportGDButton" x-mojo-element="Button"></div>
+</div>
+
+<div id="mapview" style="display:none;">
+	<div class="palm-header center">
+		<div id="MapViewAddress" class="header-input" x-mojo-element="TextField"></div>
+	</div>
+
+	<div id='MapViewCanvas' style="width:320px; height:450px;">
+	<br><br><br><br><br><br><center>Loading Map...</center>
+	</div>
+</div>
+
+<div class="palm-scrim" id="overlay-scrim" style="display: none;">
+    <div id="waitSpinner" x-mojo-element="Spinner" />
+</div>
+

@@ -1,0 +1,24 @@
+[
+	{
+		"type": "db.kind",
+		"object": "org.e.lnx.wee.modeswitcher:1",
+		"caller": "org.e.lnx.wee.modeswitcher",
+		"operations": {
+			"create": "allow",
+			"read": "allow",
+			"update": "allow",
+			"delete": "allow"
+		}
+	},
+	{
+		"type": "db.kind",
+		"object": "org.e.lnx.wee.modeswitcher:1",
+		"caller": "org.e.lnx.wee.modeswitcher.srv",
+		"operations": {
+			"create": "allow",
+			"read": "allow",
+			"update": "allow",
+			"delete": "allow"
+		}
+	}
+]

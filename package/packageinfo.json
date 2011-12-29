@@ -1,0 +1,12 @@
+{
+  "id": "org.e.lnx.wee.modeswitcher",
+  "package_format_version": 2,
+  "loc_name": "Mode Switcher",
+  "version": "2.5.5",
+  "icon": "icon.png",
+  "miniicon": "icon.png",
+  "vendor": "Enlightened Linux Solutions",
+  "vendorurl": "wee.e-lnx.org",
+  "app": "org.e.lnx.wee.modeswitcher",
+  "services": ["org.e.lnx.wee.modeswitcher.srv"]
+}

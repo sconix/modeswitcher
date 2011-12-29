@@ -1,0 +1,15 @@
+{
+	"role": {
+		"exeName":"/var/usr/sbin/org.e.lnx.wee.modeswitcher.sys",
+		"type": "privileged",
+		"allowedNames": ["org.e.lnx.wee.modeswitcher.sys"]
+	},
+	"permissions": [
+		{
+			"service":"org.e.lnx.wee.modeswitcher.sys",
+			"inbound":["org.e.lnx.wee.modeswitcher","org.e.lnx.wee.modeswitcher.srv"],
+			"outbound":["*"]
+		}
+	]
+}
+

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+	"http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+<head>
+	<title>Mode Switcher</title>
+	<meta name="viewport" content="height=device-height" />
+
+	<script src="/usr/palm/frameworks/mojo/mojo.js" type="text/javascript" x-mojo-version="1"></script>
+
+	<script type="text/javascript">
+		function googleMapsLoaded() {
+			var appController = Mojo.Controller.getAppController();
+			
+			if(appController) {
+				var stageController = appController.getActiveStageController();
+	
+				if(stageController)
+					stageController.delegateToSceneAssistant("initializeGoogleMaps")
+			}
+		}
+	
+		Array.prototype.search = function(key, value) {
+			// Finds object from an array based on given key and value.
+		
+			for(var i = 0; i < this.length; i++) {
+				if(this[i][key] == value)
+					return i;
+			}
+	
+			return -1;		
+		};
+	</script>
+	
+	<link href="stylesheets/modeswitcher.css" type="text/css" rel="stylesheet" media="screen" />
+</head>
+<body>
+</body>
+</html>

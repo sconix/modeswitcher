@@ -1,0 +1,37 @@
+#!/bin/sh
+
+# Handle execution as pmPostInstall.script
+if [ -z "$IPKG_OFFLINE_ROOT" ]; then
+  IPKG_OFFLINE_ROOT=/media/cryptofs/apps
+  mount -o remount,rw /
+fi
+
+SRV_ID=org.e.lnx.wee.modeswitcher.srv
+SRV_DIR=/media/cryptofs/apps/usr/palm/services/${SRV_ID}
+
+SYS_ID=org.e.lnx.wee.modeswitcher.sys
+SYS_DIR=/media/cryptofs/apps/usr/palm/services/${SYS_ID}
+
+rm -f /var/cache/configurator/_media_cryptofs_apps_usr_palm_services_${SRV_ID}_configuration_db_permissions_${SRV_ID}
+
+rm -f /var/palm/event.d/${SRV_ID}
+
+/usr/bin/killall -9 ${SYS_ID} || true
+
+rm -f /var/usr/sbin/${SYS_ID}
+
+rm -f /var/palm/ls2/roles/prv/${SRV_ID}.json
+rm -f /var/palm/ls2/roles/pub/${SRV_ID}.json
+
+rm -f /var/palm/ls2/services/prv/${SRV_ID}.service
+rm -f /var/palm/ls2/services/pub/${SRV_ID}.service
+
+rm -f /var/palm/ls2/roles/prv/${SYS_ID}.json
+rm -f /var/palm/ls2/roles/pub/${SYS_ID}.json
+
+rm -f /var/palm/ls2/services/prv/${SYS_ID}.service
+rm -f /var/palm/ls2/services/pub/${SYS_ID}.service
+
+/usr/bin/pkill switcher.srv.js || true
+
+/usr/bin/ls-control scan-services || true

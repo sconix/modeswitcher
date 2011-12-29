@@ -1,0 +1,13 @@
+{
+	"title": "Mode Switcher",
+	"id": "org.e.lnx.wee.modeswitcher",
+	"version": "3.0.0",
+	"uiRevision": "2",
+	"type": "web",
+	"main": "index.html",
+	"icon": "icon.png",
+	"noWindow": "false",
+	"vendor": "Enlightened Linux Solutions",
+	"vendor_email": "development@e-lnx.org",
+	"vendor_url": "http://wee.e-lnx.org/ModeSwitcher"
+}
